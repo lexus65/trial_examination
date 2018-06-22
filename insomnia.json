@@ -1,0 +1,276 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-06-22T13:28:37.569Z",
+	"__export_source": "insomnia.desktop.app:v5.16.6",
+	"resources": [
+		{
+			"_id": "wrk_f29ba31a71cc4bc79ca80185b0ac0f0d",
+			"created": 1529606057828,
+			"description": "",
+			"modified": 1529606057828,
+			"name": "Football",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_ad2a5e9d5f4a4946bc91ebcfae9d5cdc",
+			"color": null,
+			"created": 1529606057866,
+			"data": {
+				"host": "localhost:8000/api",
+				"league_id": 1,
+				"team_id": 1
+			},
+			"isPrivate": false,
+			"modified": 1529606247350,
+			"name": "New Environment",
+			"parentId": "wrk_f29ba31a71cc4bc79ca80185b0ac0f0d",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_632307d123eb4369a8f73d6934017652",
+			"cookies": [
+				{
+					"creation": "2018-06-22T11:36:37.490Z",
+					"domain": "localhost",
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "8520029606729724",
+					"key": "PHPSESSID",
+					"lastAccessed": "2018-06-22T11:36:37.490Z",
+					"path": "/",
+					"value": "q2s639mi3cspig7crkvso3pjnl"
+				}
+			],
+			"created": 1529606057871,
+			"modified": 1529667397492,
+			"name": "Default Jar",
+			"parentId": "wrk_f29ba31a71cc4bc79ca80185b0ac0f0d",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_1ff1cf906e884712a94f5ecd1ba23606",
+			"created": 1529606427253,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1529606427253,
+			"modified": 1529606427253,
+			"name": "Teams",
+			"parentId": "wrk_f29ba31a71cc4bc79ca80185b0ac0f0d",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_1e4f382cf4a2417c8f0dd8d1f0beea7b",
+			"created": 1529606448415,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1529606448415,
+			"modified": 1529606448415,
+			"name": "Leagues",
+			"parentId": "wrk_f29ba31a71cc4bc79ca80185b0ac0f0d",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_f024833e81be429b83e444cf8c7fc3c2",
+			"created": 1529606460654,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1529606460654,
+			"modified": 1529606460654,
+			"name": "Auth",
+			"parentId": "wrk_f29ba31a71cc4bc79ca80185b0ac0f0d",
+			"_type": "request_group"
+		},
+		{
+			"_id": "env_e7e6becf1ff74ed19a890e952688cd7b",
+			"color": "#d45900",
+			"created": 1529606103804,
+			"data": {
+				"host": "http://localhost:8000/api",
+				"league_id": 1,
+				"team_id": 1
+			},
+			"isPrivate": false,
+			"modified": 1529611779594,
+			"name": "dev_env",
+			"parentId": "env_ad2a5e9d5f4a4946bc91ebcfae9d5cdc",
+			"_type": "environment"
+		},
+		{
+			"_id": "req_dc12a1df63a94f2097d23cb70153d9cf",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"property\" : \"name\",\n\t\"value\" : \"Ukraine\"\n}"
+			},
+			"created": 1529606315416,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_4004799852744fbc8c95d9f5bfc489e3",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_f5267d627f6342d3b439ab8c8d77402a",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJJU19BVVRIRU5USUNBVEVEX0ZVTExZIl0sInVzZXJuYW1lIjoiam9obmRvZSIsImlhdCI6MTUyOTY2OTE4NCwiZXhwIjoxNTI5NjcyNzg0fQ.CiPw_Vp__-RFCBafhM00Kwn57yOlrWr-WvWh83KPITCWY3T4B674MZq08HLvRbdylLr2yms9GDPDD3fYwEGqXWfulTkUGFcjWATj6X6JG2VeV6EzI4WrEISt9k5BcUhZhAX_1esdLoZRNqrknEUVpj_ikwZ2C-1wVTfE5CKxL_kmomMVzLWMi98Z_pFG5epVRCpZSDsf3vmOUGkhykDFo4R3O4A5CRTV_nlOwDKAGb7Q171pv-Zj815UJuZMvp2ym-lS1ZhJ9SvSadObQd_VIJ8Wl9JHz9Fqp8FbFRS_LP8jC8V16TEYyfyebII_9V7iB8o0_cRTjoIxaXmQlv2M1HAzKO9HkwNiRQyJFtJbN_Cv5x-ZnNarV1rZ3nOiQiCkdkF39UPmGjFCXjbMXpM0wkXkkC1ueo5HUHscKxfAtFcwSiUeWKZhAvhxnCWTqOYSPT4_y7jHbMYFPFCOJJAx3f7Eq__maUAoZeNMFmIr1IGIFbi9F9GGs9WVRM3303Q_l50ynTj94kEuNionx4EPIEknzeHS14SmXumJSLFG_uRv9NXqMfChE4gbSNxsQ2slds5W9TghNZ-GHPTOMGxygLYqw1U8L23kg59cDA-pREvhkJMWGUX_I3xCNB-qxBh-5Mn6YqTveP23iZ2EvwK5PlHidnzRs3TYn5A2tCb5cuA"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529606427353,
+			"method": "PUT",
+			"modified": 1529669468497,
+			"name": "football_team_modify",
+			"parameters": [],
+			"parentId": "fld_1ff1cf906e884712a94f5ecd1ba23606",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ host  }}/football-team/{{ team_id  }}",
+			"_type": "request"
+		},
+		{
+			"_id": "req_4b5a91cb04db43c0a8cad93e366fc5d4",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\" : \"Ital12y\",\n\t\"strip\" : \"good\",\n\t\"league\" : 1\n}"
+			},
+			"created": 1529606351581,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_bf453a15e17a49198a80054fc5e3e096",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_3aa579e90d704eeab7ccb4b877009f95",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJJU19BVVRIRU5USUNBVEVEX0ZVTExZIl0sInVzZXJuYW1lIjoiam9obmRvZSIsImlhdCI6MTUyOTY2OTE4NCwiZXhwIjoxNTI5NjcyNzg0fQ.CiPw_Vp__-RFCBafhM00Kwn57yOlrWr-WvWh83KPITCWY3T4B674MZq08HLvRbdylLr2yms9GDPDD3fYwEGqXWfulTkUGFcjWATj6X6JG2VeV6EzI4WrEISt9k5BcUhZhAX_1esdLoZRNqrknEUVpj_ikwZ2C-1wVTfE5CKxL_kmomMVzLWMi98Z_pFG5epVRCpZSDsf3vmOUGkhykDFo4R3O4A5CRTV_nlOwDKAGb7Q171pv-Zj815UJuZMvp2ym-lS1ZhJ9SvSadObQd_VIJ8Wl9JHz9Fqp8FbFRS_LP8jC8V16TEYyfyebII_9V7iB8o0_cRTjoIxaXmQlv2M1HAzKO9HkwNiRQyJFtJbN_Cv5x-ZnNarV1rZ3nOiQiCkdkF39UPmGjFCXjbMXpM0wkXkkC1ueo5HUHscKxfAtFcwSiUeWKZhAvhxnCWTqOYSPT4_y7jHbMYFPFCOJJAx3f7Eq__maUAoZeNMFmIr1IGIFbi9F9GGs9WVRM3303Q_l50ynTj94kEuNionx4EPIEknzeHS14SmXumJSLFG_uRv9NXqMfChE4gbSNxsQ2slds5W9TghNZ-GHPTOMGxygLYqw1U8L23kg59cDA-pREvhkJMWGUX_I3xCNB-qxBh-5Mn6YqTveP23iZ2EvwK5PlHidnzRs3TYn5A2tCb5cuA"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529606427303,
+			"method": "POST",
+			"modified": 1529673545367,
+			"name": "football_team_create",
+			"parameters": [],
+			"parentId": "fld_1ff1cf906e884712a94f5ecd1ba23606",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ host  }}/football-team/create",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f4fbb43f457241d5a76772cb77d2c063",
+			"authentication": {},
+			"body": {},
+			"created": 1529606168869,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_c53fba75d5774e649ad4ca13bb6c3334",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJJU19BVVRIRU5USUNBVEVEX0ZVTExZIl0sInVzZXJuYW1lIjoiam9obmRvZSIsImlhdCI6MTUyOTY3MzM4MiwiZXhwIjoxNTI5Njc2OTgyfQ.L8NpqPkca8rZ_k_4ts7gG1pt4nwPlGuOdnuP5LoHdRUDZRFvjm_XozzKXQMb7Rc22RD3FtzKuMd2Yfu-2Bp0Q9c-o-cdrTqiuUNZR5ybCD0y0m0Fh6i8NaLUazGYZohzLn_0ZueqQ6oJ0rDWZimXR_HSgeUaInnhcJrgpR_y08SXSG-JwOhqwrJaPT0pLp0tckrPa1_Kacveg1VjenOoEsn5f3vMJ6ptVHnf7C1JsNXid6liD3mgnCnYsHacMIyHRV27wXL8kp_vNKf5ZA9sU4jcBeYuYJjM6r0onQi7iPdHYsFZ_67YPbqP_x-XQQxSvfX6w5aNddKDrwqkTotdzYriq7qwQJl4IvzqmsYcqoN-R1ru6t9QHKG6ZHI3JBU-fhdKuAdhdR9ZreP5eweopKa9ZvJ5ym0yZbeWdGj5F1wanKbcNKIenmlo7HUAkGQZCvTlHNZcmLiCQaScS4mBfXKVj3Q3Q420hfn-UzfJB71CekAcfQiLL9npy93tGMhkkuzZSsDDvwd4-XOyYorlXBDTwbjwzJsABX-sqfzbRuAHUeps-4scwakiu0ckS4GJpcjqLk4gNsKLsjGmKm9iqXabvlP37XWykZ_CR1SScgvl8qOY7MNHmtTnv-UFMUIsSpzhDMJj_Hgad6EAhbnERizoamSRosp3_xkUQOZ3Hso"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529606273873,
+			"method": "GET",
+			"modified": 1529673392638,
+			"name": "football_league_get_teams",
+			"parameters": [],
+			"parentId": "fld_1e4f382cf4a2417c8f0dd8d1f0beea7b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ host  }}/football/league/{{ league_id  }}",
+			"_type": "request"
+		},
+		{
+			"_id": "req_77855b7874984cb48d98f2ab34df9191",
+			"authentication": {},
+			"body": {},
+			"created": 1529606273923,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_9d51f36fe7184f339ea2c15b84105dfc",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_657901ef43a0424ea3ae0017cd92e7bd",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJJU19BVVRIRU5USUNBVEVEX0ZVTExZIl0sInVzZXJuYW1lIjoiam9obmRvZSIsImlhdCI6MTUyOTY3MzM4MiwiZXhwIjoxNTI5Njc2OTgyfQ.L8NpqPkca8rZ_k_4ts7gG1pt4nwPlGuOdnuP5LoHdRUDZRFvjm_XozzKXQMb7Rc22RD3FtzKuMd2Yfu-2Bp0Q9c-o-cdrTqiuUNZR5ybCD0y0m0Fh6i8NaLUazGYZohzLn_0ZueqQ6oJ0rDWZimXR_HSgeUaInnhcJrgpR_y08SXSG-JwOhqwrJaPT0pLp0tckrPa1_Kacveg1VjenOoEsn5f3vMJ6ptVHnf7C1JsNXid6liD3mgnCnYsHacMIyHRV27wXL8kp_vNKf5ZA9sU4jcBeYuYJjM6r0onQi7iPdHYsFZ_67YPbqP_x-XQQxSvfX6w5aNddKDrwqkTotdzYriq7qwQJl4IvzqmsYcqoN-R1ru6t9QHKG6ZHI3JBU-fhdKuAdhdR9ZreP5eweopKa9ZvJ5ym0yZbeWdGj5F1wanKbcNKIenmlo7HUAkGQZCvTlHNZcmLiCQaScS4mBfXKVj3Q3Q420hfn-UzfJB71CekAcfQiLL9npy93tGMhkkuzZSsDDvwd4-XOyYorlXBDTwbjwzJsABX-sqfzbRuAHUeps-4scwakiu0ckS4GJpcjqLk4gNsKLsjGmKm9iqXabvlP37XWykZ_CR1SScgvl8qOY7MNHmtTnv-UFMUIsSpzhDMJj_Hgad6EAhbnERizoamSRosp3_xkUQOZ3Hso"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529606273923,
+			"method": "DELETE",
+			"modified": 1529673508408,
+			"name": "football_league_delete",
+			"parameters": [],
+			"parentId": "fld_1e4f382cf4a2417c8f0dd8d1f0beea7b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ host  }}/football/league/{{ league_id  }}",
+			"_type": "request"
+		},
+		{
+			"_id": "req_9dda079c468546719babf1dfef116994",
+			"authentication": {},
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"id": "pair_917f08b7e4cc4dc1a6ccc64ba03c710e",
+						"name": "_password",
+						"value": "test"
+					},
+					{
+						"id": "pair_9239728b5433427d9ad8aad60cfd4a25",
+						"name": "_username",
+						"value": "johndoe"
+					}
+				]
+			},
+			"created": 1529606471589,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_556bf700025444cf86801a81fa26d231",
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529606471589,
+			"method": "POST",
+			"modified": 1529669070747,
+			"name": "login",
+			"parameters": [],
+			"parentId": "fld_f024833e81be429b83e444cf8c7fc3c2",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ host  }}/login_check",
+			"_type": "request"
+		}
+	]
+}
